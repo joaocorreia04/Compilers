@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.up.fe.comp.cpf.Cpf4_Jasmin" tests="27" skipped="0" failures="0" errors="0" timestamp="2024-06-17T17:05:24" hostname="MacBook-Pro-de-Joao.local" time="2.414">
+  <properties/>
+  <testcase name="section5_Arrays_ArrayVarArgs" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.141"/>
+  <testcase name="section3_ControlFlow_While_Simple" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.129"/>
+  <testcase name="section3_ControlFlow_Inverted" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.15"/>
+  <testcase name="section3_ControlFlow_Mixed_Nested" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.131"/>
+  <testcase name="section5_Arrays_Signature_ArrayAsArg" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.005"/>
+  <testcase name="section5_Arrays_VarargsAndArrayInit" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.133"/>
+  <testcase name="section3_ControlFlow_Mixed_Switch" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.117"/>
+  <testcase name="section3_ControlFlow_If_Else_In_Main" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.115"/>
+  <testcase name="section2_Arithmetic_BytecodeIndex_IstoreVar" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.006"/>
+  <testcase name="section6_Limits_Locals_Not_99" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.01"/>
+  <testcase name="section6_Limits_Locals_Simple" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.01"/>
+  <testcase name="section3_ControlFlow_If_Not_Simple" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.136"/>
+  <testcase name="section3_ControlFlow_If_Simple" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.149"/>
+  <testcase name="section2_Arithmetic_Simple_and" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.11"/>
+  <testcase name="section2_Arithmetic_Simple_not" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.107"/>
+  <testcase name="section6_Limits_Stack_Not_99" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.01"/>
+  <testcase name="section6_Limits_Stack_Simple" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.016"/>
+  <testcase name="section5_Arrays_As_Arg_Simple" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.119"/>
+  <testcase name="section5_Arrays_Load_ComplexArrayAccess" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.116"/>
+  <testcase name="section4_Calls_Misc_ConditionArgs" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.151"/>
+  <testcase name="section5_Arrays_Array_Initialization" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.141"/>
+  <testcase name="section5_Arrays_As_Arg_Aload" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.009"/>
+  <testcase name="section2_Arithmetic_Simple_less" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.12"/>
+  <testcase name="section1_Basic_Method_Declaration_Array" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.003"/>
+  <testcase name="section5_Arrays_Init_Array" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.135"/>
+  <testcase name="section5_Arrays_Store_Array" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.127"/>
+  <testcase name="section2_Arithmetic_BytecodeIndex_IloadArg" classname="pt.up.fe.comp.cpf.Cpf4_Jasmin" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

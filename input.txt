@@ -1,0 +1,16 @@
+import io;
+import A;
+
+class Test {
+    public int foo() {
+        A a;
+        a = new A();
+        a.tes();
+        io.println();
+        return 1;
+    }
+
+    public static void main(String[] args) {
+
+    }
+}

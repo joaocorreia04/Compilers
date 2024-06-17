@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.up.fe.comp.cpf.Cpf1_ParserAndTree" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-17T17:05:22" hostname="MacBook-Pro-de-Joao.local" time="1.753">
+  <properties/>
+  <testcase name="section1_OpPrecedence_1_AddMultConstants" classname="pt.up.fe.comp.cpf.Cpf1_ParserAndTree" time="1.753"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

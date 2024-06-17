@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="pt.up.fe.comp.cpf.Cpf2_SemanticAnalysis" tests="6" skipped="0" failures="1" errors="0" timestamp="2024-06-17T17:05:23" hostname="MacBook-Pro-de-Joao.local" time="0.386">
+  <properties/>
+  <testcase name="section1_SymbolTable_Fields" classname="pt.up.fe.comp.cpf.Cpf2_SemanticAnalysis" time="0.029"/>
+  <testcase name="section1_SymbolTable_Parameters" classname="pt.up.fe.comp.cpf.Cpf2_SemanticAnalysis" time="0.009"/>
+  <testcase name="section2_Lookup_VarLookup_Field_Main_Fail" classname="pt.up.fe.comp.cpf.Cpf2_SemanticAnalysis" time="0.008"/>
+  <testcase name="section2_Lookup_SuperWithImport" classname="pt.up.fe.comp.cpf.Cpf2_SemanticAnalysis" time="0.007"/>
+  <testcase name="section2_Lookup_VarLookup_Field" classname="pt.up.fe.comp.cpf.Cpf2_SemanticAnalysis" time="0.199">
+    <failure message="org.junit.ComparisonFailure: Lookup of field&#10;&#10;Jasmin code:&#10;.class public A&#10;&#10;.super java/lang/Object&#10;.field public a I&#10;.method public &lt;init&gt;()V&#10;    aload_0&#10;    invokespecial java/lang/Object/&lt;init&gt;()V&#10;    return&#10;.end method&#10;&#10;.method public x()I&#10;   .limit stack 3&#10;   .limit locals 2&#10;   aload_0&#10;   bipush 10&#10;   putfield A/a I&#10;   aload_0&#10;   invokestatic io/print(I)V&#10;   aload_0&#10;   ireturn&#10;.end method&#10;&#10;.method public static main([Ljava/lang/String;)V&#10;   .limit stack 3&#10;   .limit locals 3&#10;   new A&#10;   dup&#10;   astore_1&#10;   aload_1&#10;   invokespecial A/&lt;init&gt;()V&#10;   aload_1&#10;   astore_2&#10;   aload_2&#10;   invokevirtual A/x()I&#10;   pop&#10;   return&#10;.end method&#10;&#10;&#10;No reports&#10;&#10; expected:&lt;[10]&gt; but was:&lt;[Error: Unable to initialize main class A&#10;Caused by: java.lang.VerifyError: (class: A, method: x signature: ()I) Expecting to find integer on stack]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: Lookup of field
+
+Jasmin code:
+.class public A
+
+.super java/lang/Object
+.field public a I
+.method public &lt;init&gt;()V
+    aload_0
+    invokespecial java/lang/Object/&lt;init&gt;()V
+    return
+.end method
+
+.method public x()I
+   .limit stack 3
+   .limit locals 2
+   aload_0
+   bipush 10
+   putfield A/a I
+   aload_0
+   invokestatic io/print(I)V
+   aload_0
+   ireturn
+.end method
+
+.method public static main([Ljava/lang/String;)V
+   .limit stack 3
+   .limit locals 3
+   new A
+   dup
+   astore_1
+   aload_1
+   invokespecial A/&lt;init&gt;()V
+   aload_1
+   astore_2
+   aload_2
+   invokevirtual A/x()I
+   pop
+   return
+.end method
+
+
+No reports
+
+ expected:&lt;[10]&gt; but was:&lt;[Error: Unable to initialize main class A
+Caused by: java.lang.VerifyError: (class: A, method: x signature: ()I) Expecting to find integer on stack]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at pt.up.fe.comp.CpUtils.assertEquals(CpUtils.java:214)
+	at pt.up.fe.comp.cpf.Cpf2_SemanticAnalysis.section2_Lookup_VarLookup_Field(Cpf2_SemanticAnalysis.java:123)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:112)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:40)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:60)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$2.run(TestWorker.java:176)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <testcase name="section2_Lookup_VarLookup_Local" classname="pt.up.fe.comp.cpf.Cpf2_SemanticAnalysis" time="0.132"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
